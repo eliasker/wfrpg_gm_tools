@@ -1,0 +1,21 @@
+.d100Input{
+  width: 3em;
+}
+
+.tableImage {
+  min-width: 800px;
+  max-width: 80%;
+}
+
+.pointer:hover {
+  cursor: pointer;
+}
+
+.navbar {
+  display:flex;
+  align-items: center;
+}
+
+.navitems {
+  margin-left: 10px;
+}
