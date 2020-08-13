@@ -1,45 +1,10 @@
 import React from 'react'
+import Statblock from './Statblock'
+
 import test from '../../data/npcs/test_npc.json'
 
-// TODO: make statblock component
 // TODO: make JSON-parser
 const NPC = () => {
-  const Statblock = ({ stats }) => {
-    return (
-      <table>
-        <tbody>
-          <tr>
-            <td>M</td>
-            <td>WS</td>
-            <td>BS</td>
-            <td>S</td>
-            <td>T</td>
-            <td>I</td>
-            <td>Agi</td>
-            <td>Dex</td>
-            <td>Int</td>
-            <td>WP</td>
-            <td>Fel</td>
-            <td>W</td>
-          </tr>
-          <tr>
-            <td>{stats['M']}</td>
-            <td>{stats['WS']}</td>
-            <td>{stats['BS']}</td>
-            <td>{stats['S']}</td>
-            <td>{stats['T']}</td>
-            <td>{stats['I']}</td>
-            <td>{stats['Agi']}</td>
-            <td>{stats['Dex']}</td>
-            <td>{stats['Int']}</td>
-            <td>{stats['WP']}</td>
-            <td>{stats['Fel']}</td>
-            <td>{stats['W']}</td>
-          </tr>
-        </tbody>
-      </table>
-    )
-  }
   return (
     <div>
       <ul>
