@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import useContent from '../../hooks/useContent'
+import NPC from './NPC'
 
 const World = () => {
   const [current, showCurrent] = useContent()
@@ -7,6 +8,7 @@ const World = () => {
   const NPCs = () => (
     <div>
       <p>filterable (by tags) npcs here</p>
+      <NPC />
     </div>
   )
 

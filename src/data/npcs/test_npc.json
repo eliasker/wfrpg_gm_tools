@@ -1,0 +1,62 @@
+{
+  "name": "name",
+  "appearance": {
+    "general": "general",
+    "clothing": "clothes",
+    "other": "other"
+  },
+  "personality": "personality",
+  "location": "location",
+  "home": "home",
+  "position": "position",
+  "useful_skills": "useful_skills",
+  "mission": "mission",
+  "first_goal": "first_goal",
+  "secrets_fears": "secrets_fears",
+  "contacts": {
+    "friends": [
+      "Friend1",
+      "Friend2"
+    ],
+    "enemies": [
+      "Enemy1",
+      "Enemy2"
+    ],
+    "other": [
+      "Contact1",
+      "Contact2"
+    ]
+  },
+  "stats": {
+    "M": 0,
+    "WS": 10,
+    "BS": 0,
+    "S": 0,
+    "T": 0,
+    "I": 0,
+    "Agi": 0,
+    "Dex": 0,
+    "Int": 0,
+    "WP": 0,
+    "Fel": 0,
+    "W": 0
+  },
+  "skills": [
+    "Skill1: 30",
+    "Skill2: 10"
+  ],
+  "talents": [
+    "Talent1",
+    "Talent2",
+    "Talent3 (description)"
+  ],
+  "trappings": [
+    "0GC, 0SS, 0BP",
+    "Item1",
+    "Item2"
+  ],
+  "notes": [
+    "Note1",
+    "Note2"
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "name": "name",
+  "appearance": {
+    "general": "general",
+    "clothing": "clothes",
+    "other": "other"
+  },
+  "personality": "personality",
+  "location": "location",
+  "home": "home",
+  "position": "position",
+  "useful_skills": "useful_skills",
+  "mission": "mission",
+  "first_goal": "first_goal",
+  "secrets_fears": "secrets_fears",
+  "contacts": {
+    "friends": [],
+    "enemies": [],
+    "other": []
+  },
+  "stats": {
+    "M": 0,
+    "WS": 0,
+    "BS": 0,
+    "S": 0,
+    "T": 0,
+    "I": 0,
+    "Agi": 0,
+    "Dex": 0,
+    "Int": 0,
+    "WP": 0,
+    "Fel": 0,
+    "W": 0
+  },
+  "skills": [],
+  "talents": [],
+  "trappings": [],
+  "notes": []
+}
