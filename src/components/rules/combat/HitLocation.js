@@ -1,9 +1,10 @@
 import React, { useState } from 'react'
 import { hitLocations, critTableImages } from '../../../data/tables'
+import useContent from '../../../hooks/useContent'
 
 const HitLocation = () => {
   const [image, setImage] = useState({ img: null })
-  const [current, setCurrent] = useState(null)
+  const [current, showCurrent] = useContent()
 
   const generateTable = () => {
 
@@ -11,12 +12,12 @@ const HitLocation = () => {
       e.preventDefault()
       if (current === type) {
         setImage({ img: null })
-        setCurrent(null)
+        showCurrent(null)
         return
       }
       const foundImage = critTableImages.find(i => i.type === type)
       setImage(foundImage)
-      setCurrent(foundImage.type)
+      showCurrent(foundImage.type)
     }
 
     return (

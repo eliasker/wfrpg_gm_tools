@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
+import useContent from '../../hooks/useContent'
 
 const World = () => {
-  const [current, setCurrent] = useState(null)
-  const showContent = (name) => current === name ? setCurrent(null) : setCurrent(name)
+  const [current, showCurrent] = useContent()
 
   const NPCs = () => (
     <div>
@@ -46,9 +46,9 @@ const World = () => {
   return (
     <div>
       <h3>World / GM page</h3>
-      <p onClick={() => showContent('npcs')}>npcs</p>
-      <p onClick={() => showContent('events')}>events</p>
-      <p onClick={() => showContent('maps')}>maps</p>
+      <p onClick={() => showCurrent('npcs')}>npcs</p>
+      <p onClick={() => showCurrent('events')}>events</p>
+      <p onClick={() => showCurrent('maps')}>maps</p>
       <Content />
     </div>
   )

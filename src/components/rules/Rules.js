@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 import HitLocation from './combat/HitLocation'
+import useContent from '../../hooks/useContent'
 
 const Rules = () => {
-  const [current, setCurrent] = useState(null)
-  const showContent = (name) => current === name ? setCurrent(null) : setCurrent(name)
+  const [current, showCurrent] = useContent()
 
   const Combat = () => (
     <HitLocation />
@@ -13,7 +13,7 @@ const Rules = () => {
     <div>
       <h3>General rules & tables here</h3>
       <ul className='pointer'>
-        <li onClick={() => showContent('combat')}>Combat</li>
+        <li onClick={() => showCurrent('combat')}>Combat</li>
         {current === 'combat' ? <Combat /> : null}
         <li>Magic</li>
         <li>Prayers</li>

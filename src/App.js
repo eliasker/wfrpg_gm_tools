@@ -27,7 +27,7 @@ const App = () => {
       <Router>
         <Navbar>
           <Navbar.Brand as={Link} to="/">
-            WFRGP
+            WFRPG
           </Navbar.Brand>
           <Navbar.Collapse>
             <Nav>
