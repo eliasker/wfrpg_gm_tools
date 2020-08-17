@@ -1,15 +1,15 @@
 import React from 'react'
 import Statblock from './Statblock'
-
+//import { parseNPC } from '../../util/JSONparser'
 import test from '../../data/npcs/test_npc.json'
 
-// TODO: make JSON-parser
+// TODO: start using JSON-parser 
 const NPC = () => {
   return (
     <div>
       <ul>
         <li>Name: {test.name}</li>
-        <li>Appearance</li>
+        <li>Appearance:</li>
         <ul>
           <li>General: {test.appearance.general}</li>
           <li>Clothing: {test.appearance.clothing}</li>
@@ -66,7 +66,6 @@ const NPC = () => {
       </ul>
     </div>
   )
-
 }
 
 export default NPC
