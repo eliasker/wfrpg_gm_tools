@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
 
 import arrayFilter from '../../util/filter'
-
 const talentList = require('../../data/talents.json')
 
 // TODO: Remove clickable from parent component
 // TODO: Algorithm optimization (?)
+// TODO: Add Table property to Talents.json where needed
 const Talents = () => {
   const [searchInput, setSearchInput] = useState('')
 

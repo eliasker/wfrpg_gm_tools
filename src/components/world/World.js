@@ -8,6 +8,7 @@ const World = () => {
   const NPCs = () => (
     <div>
       <p>filterable (by tags) npcs here</p>
+      <p>Current example npc</p>
       <NPC />
     </div>
   )

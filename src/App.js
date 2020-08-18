@@ -18,7 +18,6 @@ const App = () => {
   const Main = () => (
     <div>
       <h3>Warhammer Fantasy RPG utilities</h3>
-      <p>app detail here</p>
     </div>
   )
 
@@ -31,7 +30,6 @@ const App = () => {
           </Navbar.Brand>
           <Navbar.Collapse>
             <Nav>
-              <Link to="/" className="nav-link">Main</Link>
               <Link to="/players" className="nav-link">Players</Link>
               <Link to="/rules" className="nav-link">Rules</Link>
               <Link to="/world" className="nav-link">World</Link>
