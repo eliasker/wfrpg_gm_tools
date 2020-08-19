@@ -1,35 +1,36 @@
 import React, { useState } from 'react'
 
-import arrayFilter from '../../util/filter'
+import SearchForm from '../generic/SearchForm'
 const skillList = require('../../data/skills.json')
 
+// TODO: Add Table property to skills.json where needed
 const Skills = () => {
   const [searchInput, setSearchInput] = useState('')
 
   const mapDesc = (array) => array.map(child => <p key={child}>{child}</p>)
 
   const mapSkills = () => {
-    const filteredSkillNames = arrayFilter(skillList.skills.map(s => s.name), searchInput)
-
     return skillList.skills
-      .filter(s => filteredSkillNames.find(e => s.name === e))
-      .map(s => {
+      .filter(s => s.name.toLowerCase().includes(searchInput.toLowerCase()))
+      .map(sf => {
         return (
-          <div key={s.id}>
-            <h3>{s.name}</h3>
-            {mapDesc(s.desc)}
-            <p>{s.example}</p>
-            <p>{s.options}</p>
-            <p>{s.specialisations}</p>
+          <div key={sf.id}>
+            <h3>{sf.name}</h3>
+            {mapDesc(sf.desc)}
+            <p>{sf.example}</p>
+            <p>{sf.options}</p>
+            <p>{sf.specialisations}</p>
           </div>
         )
       })
   }
   return (
     <div>
-      <form onSubmit={e => e.preventDefault()}>
-        <input type='search' placeholder='Search skill name' value={searchInput} onChange={e => setSearchInput(e.target.value)} />
-      </form>
+      <SearchForm
+        searchInput={searchInput}
+        setSearchInput={setSearchInput}
+        placeholder='Search Skills by name'
+      />
       {mapSkills()}
     </div>
   )

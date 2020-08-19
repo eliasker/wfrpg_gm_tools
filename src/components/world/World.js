@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import useContent from '../../hooks/useContent'
 import NPC from './NPC'
 

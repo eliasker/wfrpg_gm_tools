@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import HitLocation from './combat/HitLocation'
 import useContent from '../../hooks/useContent'
 import Talents from './Talents'
