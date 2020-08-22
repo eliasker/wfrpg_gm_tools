@@ -12,6 +12,9 @@ import Players from './components/players/Players'
 import Rules from './components/rules/Rules'
 import World from './components/world/World'
 import { Navbar, Nav } from 'react-bootstrap'
+import Talents from './components/rules/Talents'
+import Skills from './components/rules/Skills'
+import Spells from './components/rules/Spells'
 
 const App = () => {
 
@@ -30,18 +33,18 @@ const App = () => {
           </Navbar.Brand>
           <Navbar.Collapse>
             <Nav>
-              <Link to="/players" className="nav-link">Players</Link>
-              <Link to="/rules" className="nav-link">Rules</Link>
-              <Link to="/world" className="nav-link">World</Link>
+              <Link to="/talents" className="nav-link">Talents</Link>
+              <Link to="/skills" className="nav-link">Skills</Link>
+              <Link to="/spells" className="nav-link">Spells</Link>
             </Nav>
           </Navbar.Collapse>
         </Navbar>
 
         <Switch>
           <Route exact path="/"><Main /></Route>
-          <Route path="/players"><Players /></Route>
-          <Route path="/rules"><Rules /></Route>
-          <Route path="/world"><World /></Route>
+          <Route path="/skills"><Skills /></Route>
+          <Route path="/talents"><Talents /></Route>
+          <Route path="/spells"><Spells /></Route>
         </Switch>
       </Router>
     </div>

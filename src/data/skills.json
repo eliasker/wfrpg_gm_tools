@@ -360,7 +360,7 @@
         "Allows you to creep quietly and conceal yourself in shadows more readily than most. Stealth is generally Opposed by an opponent’s Perception Skill, and Tests will be modified by how dark or well concealed your route is, as well as how circumspectly you are dressed. An Impressive or Astounding Failure on a Stealth Test will likely draw the immediate attention of the enemies you were trying to avoid in the first place.Stealth has many potential applications in combat, most usefully to hide oneself in preparation for an Ambush, or to creep around an opponent in order to attack from behind. See Chapter 5: Rules for the implications of this. Of course, you can also use the Skill to escape a conflict unseen..."
       ],
       "specialisations": "Specialisations:  Rural, Underground, Urban",
-      "options": "Options: Shadowing is following someone secretly. To do this requires a Combined perception and Stealth Test (see page 155). If the target is actively trying to lose a tail, it is Opposed with the target’s Stealth Skill. If you pass the perception Test, and fail the Stealth Test you follow your target, but are spotted. If you fail the perception Test, yet pass the Stealth Test, you lose your target, but go unnoticed. IV130"
+      "options": "Options: Shadowing is following someone secretly. To do this requires a Combined perception and Stealth Test (see page 155). If the target is actively trying to lose a tail, it is Opposed with the target’s Stealth Skill. If you pass the perception Test, and fail the Stealth Test you follow your target, but are spotted. If you fail the perception Test, yet pass the Stealth Test, you lose your target, but go unnoticed."
     },
     {
       "id": 42,

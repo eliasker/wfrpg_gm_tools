@@ -707,7 +707,7 @@
           "range": "Range: Willpower yards",
           "target": "Target: Area of Effect (Willpower Bonus yards)",
           "duration": "Duration: Willpower Bonus Rounds",
-          "desc": "Calling on the golden wind, you alter the density of your target’s belongings, raising or lowering their weight. For the duration of the spell, choose one effect for everyone within the area of effect:• Count as two steps more Overburdened• Do not count as OverburdenedSee page 293 for details on Encumbrance. "
+          "desc": "Calling on the golden wind, you alter the density of your target’s belongings, raising or lowering their weight. For the duration of the spell, choose one effect for everyone within the area of effect: 1) Count as two steps more Overburdened. 2) Do not count as Overburdened. See page 293 for details on Encumbrance. "
         },
         {
           "name": "Fool’s Gold",
@@ -810,7 +810,7 @@
           "range": "Range: Willpower Bonus yards",
           "target": "Target: Special",
           "duration": "Duration: Special",
-          "desc": "You cause Ghyran to flood an area that is blighted or desolate. You may target either a dry riverbed, well, field, or a domestic animal. If you successfully cast the spell, the target bursts to life:• A dry river begins to flow once again• A dry or polluted well becomes clean and fresh • A planted field, vineyard or orchard bursts into life, with all crops immediately reaching full ripeness• A sick or unproductive animal becomes healthy. The affected beast is now healthily productive (cows produce milk, hens lay eggs, coats and hides of sheep and cows are healthy and lustrous) and any diseases are cured."
+          "desc": "You cause Ghyran to flood an area that is blighted or desolate. You may target either a dry riverbed, well, field, or a domestic animal. If you successfully cast the spell, the target bursts to life: A dry river begins to flow once again. A dry or polluted well becomes clean and fresh. A planted field, vineyard or orchard bursts into life, with all crops immediately reaching full ripeness. A sick or unproductive animal becomes healthy. The affected beast is now healthily productive (cows produce milk, hens lay eggs, coats and hides of sheep and cows are healthy and lustrous) and any diseases are cured."
         },
         {
           "name": "Regenerate",
@@ -1030,7 +1030,7 @@
           "range": "Range: Willpower Bonus yards",
           "target": "Target: Special",
           "duration": "Duration: Special",
-          "desc": "You may target either a well, a field, or a domestic animal. If you successfully cast the spell, the target suffers from a blight:• A blighted well becomes Instantly brackish and stagnant• Any crops currently planted in a Blighted field rot overnight• A blighted animal sickens. The afflicted beast no longer produces anything (cows produce no milk, hens produce no eggs, coats and hides grow mangy and unusable) and will die in 10–SL days"
+          "desc": "You may target either a well, a field, or a domestic animal. If you successfully cast the spell, the target suffers from a blight: A blighted well becomes Instantly brackish and stagnant. Any crops currently planted in a Blighted field rot overnight. A blighted animal sickens. The afflicted beast no longer produces anything (cows produce no milk, hens produce no eggs, coats and hides grow mangy and unusable) and will die in 10–SL days"
         },
         {
           "name": "Creeping Menace",
@@ -1046,7 +1046,7 @@
           "range": "Range: Willpower yards",
           "target": "Target: 1",
           "duration": "Duration: Willpower Bonus Rounds",
-          "desc": "Stabbing a crude representation of your target — a doll or puppet — you inflict crippling pain. When successfully cast, choose which hit location to stab:• Leg – Leg becomes useless, as if it was Amputated (see page 180). If running, the target also gains the ProneCondition and takes falling Damage.• Arm – Arm becomes useless, as if it was Amputated (see page 180). If target was holding anything in that hand, it is automatically dropped. • Body – Target doubles up in agony, gaining +1 FatiguedCondition, and must pass a Hard (–20) Endurance Test or gain the Prone Condition.• Head – Target gains the Stunned Condition, and must pass an Average (+20) Endurance Test or gain the Unconscious Condition for the Duration.While the spell is in effect, for your Action you may make a Channelling Test, stabbing the doll again, to affect a different location."
+          "desc": "Stabbing a crude representation of your target — a doll or puppet — you inflict crippling pain. When successfully cast, choose which hit location to stab: Leg – Leg becomes useless, as if it was Amputated (see page 180). If running, the target also gains the ProneCondition and takes falling Damage. Arm – Arm becomes useless, as if it was Amputated (see page 180). If target was holding anything in that hand, it is automatically dropped. Body – Target doubles up in agony, gaining +1 FatiguedCondition, and must pass a Hard (–20) Endurance Test or gain the Prone Condition. Head – Target gains the Stunned Condition, and must pass an Average (+20) Endurance Test or gain the Unconscious Condition for the Duration.While the spell is in effect, for your Action you may make a Channelling Test, stabbing the doll again, to affect a different location."
         },
         {
           "name": "Curse of Ill-Fortune",
