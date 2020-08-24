@@ -8,9 +8,6 @@ import {
   Link
 } from 'react-router-dom'
 
-import Players from './components/players/Players'
-import Rules from './components/rules/Rules'
-import World from './components/world/World'
 import { Navbar, Nav } from 'react-bootstrap'
 import Talents from './components/rules/Talents'
 import Skills from './components/rules/Skills'
