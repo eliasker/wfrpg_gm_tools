@@ -7,20 +7,22 @@ import {
   Route,
   Link
 } from 'react-router-dom'
-
-import Players from './components/players/Players'
-import Rules from './components/rules/Rules'
-import World from './components/world/World'
+import { connect } from 'react-redux'
+import { addElement, removeElement } from './redux/actions'
 import { Navbar, Nav } from 'react-bootstrap'
 import Talents from './components/rules/Talents'
 import Skills from './components/rules/Skills'
 import Spells from './components/rules/Spells'
 
-const App = () => {
-
+const App = (props) => {
+  console.log('data in redux store ', props)
   const Main = () => (
     <div>
       <h3>Warhammer Fantasy RPG utilities</h3>
+      <p>Placeholder for elements :D & testing react redux</p>
+      <div>Count: {props.elements}</div>
+      <button onClick={() => props.addElement()}>Add element</button>
+      <button onClick={() => props.removeElement()}>Remove element</button>
     </div>
   )
 
@@ -28,7 +30,7 @@ const App = () => {
     <div>
       <Router>
         <Navbar>
-          <Navbar.Brand as={Link} to="/">
+          <Navbar.Brand as={Link} to="/main">
             WFRPG
           </Navbar.Brand>
           <Navbar.Collapse>
@@ -41,7 +43,7 @@ const App = () => {
         </Navbar>
 
         <Switch>
-          <Route exact path="/"><Main /></Route>
+          <Route exact path="/main"><Main /></Route>
           <Route path="/skills"><Skills /></Route>
           <Route path="/talents"><Talents /></Route>
           <Route path="/spells"><Spells /></Route>
@@ -51,4 +53,15 @@ const App = () => {
   )
 }
 
-export default App
+const mapStateToProps = state => {
+  return { elements: state.elements.elements }
+}
+
+const mapDispatchToProps = dispatch => {
+  return {
+    addElement: () => dispatch(addElement()),
+    removeElement: () => dispatch(removeElement())
+  }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(App)
