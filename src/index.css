@@ -19,3 +19,35 @@
 .navitems {
   margin-left: 10px;
 }
+
+.color-beasts {
+  background-color: rgba(255, 69, 0, 0.75);
+}
+
+.color-death {
+  background-color: rgba(128, 0, 128, 0.75);
+}
+
+.color-fire {
+  background-color: rgba(255,0,0,0.75);
+}
+
+.color-heavens {
+  background-color: rgba(30,144,255,0.75);
+}
+
+.color-life {
+  background-color: rgba(50,205,50,0.75);
+}
+
+.color-light {
+  background-color: rgba(255, 255, 240, 0.75);
+}
+
+.color-metal {
+  background-color: rgba(255,215,0,0.75);
+}
+
+.color-shadows {
+  background-color: rgba(105,105,105, 0.75);
+}

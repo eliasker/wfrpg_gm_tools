@@ -6,7 +6,7 @@ const Spell = ({ spell }) => {
   const toggleExpanded = () => setExpanded(!expanded)
 
   return (
-    <div>
+    <div className={`color-${spell.lore}`}>
       <h3 className='pointer' onClick={() => toggleExpanded()}>{spell.name}</h3>
       {expanded ?
         <div>
