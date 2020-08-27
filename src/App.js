@@ -10,9 +10,9 @@ import {
 import { connect } from 'react-redux'
 import { addElement, removeElement } from './redux/actions'
 import { Navbar, Nav } from 'react-bootstrap'
-import Talents from './components/rules/Talents'
-import Skills from './components/rules/Skills'
-import Spells from './components/rules/Spells'
+import Talents from './components/talents/TalentList'
+import Skills from './components/skills/SkillList'
+import Spells from './components/spells/SpellList'
 
 const App = (props) => {
   console.log('data in redux store ', props)

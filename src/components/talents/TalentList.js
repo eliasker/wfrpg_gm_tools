@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 import SearchForm from '../generic/SearchForm'
 
+import Talent from './Talent'
 const talentList = require('../../data/talents.json')
 
-// TODO: Remove clickable from parent component
 // TODO: Add Table property to Talents.json where needed
 const Talents = () => {
   const [searchInput, setSearchInput] = useState('')
@@ -11,16 +11,7 @@ const Talents = () => {
   const mapTalents = () => {
     return talentList.talents
       .filter(t => t.name.toLowerCase().includes(searchInput.toLowerCase()))
-      .map(tf => {
-        return (
-          <div key={tf.id}>
-            <h3>{tf.name}</h3>
-            <p>{tf.max}</p>
-            <p>{tf.tests}</p>
-            <p>{tf.desc}</p>
-          </div>
-        )
-      })
+      .map(tf => <Talent key={tf.id} talent={tf} />)
   }
 
   return (
