@@ -1,0 +1,30 @@
+<svg width="64" height="64" xmlns="http://www.w3.org/2000/svg">
+
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="602" width="802" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <g id="eye">
+   <g id="svg_1">
+    <path id="svg_2" d="m46.551,30.119l-28.285,0c-1.105,0 -2,0.896 -2,2s0.895,2 2,2l28.285,0c1.105,0 2,-0.896 2,-2s-0.895,-2 -2,-2z" fill="#ff0000"/>
+    <path id="svg_3" d="m32,0c-17.645,0 -32,14.355 -32,32s14.355,32 32,32s32,-14.355 32,-32s-14.355,-32 -32,-32zm0,60c-15.439,0 -28,-12.561 -28,-28s12.561,-28 28,-28s28,12.561 28,28s-12.561,28 -28,28z" fill="#ff0000"/>
+   </g>
+  </g>
+  <g id="comment"/>
+  <g id="map-marker"/>
+  <g id="earth"/>
+  <g id="heart"/>
+  <g id="twitter"/>
+  <g id="bucket"/>
+  <g id="paperclip"/>
+  <g id="undo"/>
+  <g id="redo"/>
+  <g id="chevron-left"/>
+  <g id="chevron-right"/>
+  <g id="cross"/>
+  <g id="search"/>
+  <g id="hamburger"/>
+ </g>
+</svg>

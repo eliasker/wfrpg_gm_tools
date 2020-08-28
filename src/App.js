@@ -8,18 +8,22 @@ import {
   Link
 } from 'react-router-dom'
 import { connect } from 'react-redux'
-import { addElement, removeElement } from './redux/actions'
 import { Navbar, Nav } from 'react-bootstrap'
+
+import { addElement, removeElement } from './redux/actions'
+
 import Talents from './components/talents/TalentList'
 import Skills from './components/skills/SkillList'
 import Spells from './components/spells/SpellList'
+import AddToFavorites from './components/generic/AddToFavorites'
 
 const App = (props) => {
   console.log('data in redux store ', props)
   const Main = () => (
     <div>
       <h3>Warhammer Fantasy RPG utilities</h3>
-      <p>Placeholder for elements :D & testing react redux</p>
+      <p>Placeholder testing react redux & other components</p>
+      <AddToFavorites />
       <div>Count: {props.elements}</div>
       <button onClick={() => props.addElement()}>Add element</button>
       <button onClick={() => props.removeElement()}>Remove element</button>
