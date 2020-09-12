@@ -1,4 +1,4 @@
-.d100Input{
+.d100Input {
   width: 3em;
 }
 
@@ -7,16 +7,30 @@
   max-width: 80%;
 }
 
-.pointer:hover {
+.clickable:hover {
   cursor: pointer;
 }
 
+/*
+.inline-div-container {}
+*/
+
+.inline-div-left {
+  width: 50%;
+  float: left;
+}
+
+.inline-div-right {
+  width: 50%;
+  float: left;
+}
+
 .navbar {
-  display:flex;
+  display: flex;
   align-items: center;
 }
 
-.navitems {
+.margin {
   margin-left: 10px;
 }
 
@@ -29,15 +43,15 @@
 }
 
 .color-fire {
-  background-color: rgba(255,0,0,0.75);
+  background-color: rgba(255, 0, 0, 0.75);
 }
 
 .color-heavens {
-  background-color: rgba(30,144,255,0.75);
+  background-color: rgba(30, 144, 255, 0.75);
 }
 
 .color-life {
-  background-color: rgba(50,205,50,0.75);
+  background-color: rgba(50, 205, 50, 0.75);
 }
 
 .color-light {
@@ -45,9 +59,9 @@
 }
 
 .color-metal {
-  background-color: rgba(255,215,0,0.75);
+  background-color: rgba(255, 215, 0, 0.75);
 }
 
 .color-shadows {
-  background-color: rgba(105,105,105, 0.75);
+  background-color: rgba(105, 105, 105, 0.75);
 }

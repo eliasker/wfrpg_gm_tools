@@ -8,7 +8,7 @@ const Skill = ({ skill }) => {
 
   return (
     <div>
-      <h3 className='pointer' onClick={() => toggleExpanded()}>{skill.name}</h3>
+      <h4 className='clickable' onClick={() => toggleExpanded()}>{skill.name}</h4>
       {expanded ?
         <div>
           {mapDesc(skill.desc)}

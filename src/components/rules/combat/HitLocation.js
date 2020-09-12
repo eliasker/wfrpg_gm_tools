@@ -24,7 +24,7 @@ const HitLocation = () => {
       <table>
         <tbody>
           {hitLocations.map(r =>
-            <tr className="pointer" onClick={(e) => handleClick(e, r.type)} key={r.diceRoll}>
+            <tr className="clickable" onClick={(e) => handleClick(e, r.type)} key={r.diceRoll}>
               <td>{r.diceRoll}</td>
               <td>{r.location}</td>
             </tr>

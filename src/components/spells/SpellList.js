@@ -12,7 +12,7 @@ const Spells = ({ spellsByGroup }) => {
   const Group = ({ group }) =>
     group.name.toLowerCase().includes(searchInput.toLowerCase()) ?
       <div>
-        <h3>{group.name}</h3>
+        <h4>{group.name}</h4>
         <p>{group.desc}</p>
         <p>{group.ingredients}</p>
         {mapAllSpells(group.spells)}

@@ -27,7 +27,7 @@ const Rules = () => {
     }
   }
 
-  const mapOptions = () => options.map(o => <li className='pointer' onClick={() => showCurrent(o)} key={o}>{o}</li>)
+  const mapOptions = () => options.map(o => <li className='clickable' onClick={() => showCurrent(o)} key={o}>{o}</li>)
 
   return (
     <div>
