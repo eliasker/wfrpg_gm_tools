@@ -1,6 +1,58 @@
 import React from 'react'
 
+
+// TODO:FIXME:
+export const parseJSON = (JSON) => {
+  const keys = Object.keys(JSON)
+
+  const mappedJSON = keys.map(k => {
+    if (Array.isArray(JSON[k])) {
+      parseJSON(JSON[k])
+    } else if (typeof JSON[k] === 'string') {
+      return (
+        <p>{JSON[k]}</p>
+      )
+    } else if (typeof JSON[k] === 'object') {
+      parseJSON(JSON[k])
+    }
+  }
+  )
+
+  return (
+    <div>
+      {mappedJSON}
+    </div>
+  )
+}
+
+
+/*
+
+if (Array.isArray(JSON[k])) {
+      parseJSON(JSON[k])
+    } else if (typeof JSON[k] === 'string') {
+      console.log(JSON[k])
+      return (
+        <p>{JSON[k]}</p>
+      )
+    } else if (typeof JSON[k] === 'object') {
+      parseJSON(JSON[k])
+    }
+
+*/
+
+
+
+
+
+
+
+
+
+
 // TODO:FIXME: inner values not rendereing properly
+// OLD
+/*
 export const parseNPC = (JSON) => {
   const keys = Object.keys(JSON)
 
@@ -23,6 +75,7 @@ export const parseNPC = (JSON) => {
         break
     }
   }
+
   return (
     <div>
       <ul>
@@ -31,3 +84,4 @@ export const parseNPC = (JSON) => {
     </div>
   )
 }
+*/

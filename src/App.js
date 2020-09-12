@@ -3,9 +3,7 @@ import './index.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import {
   BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
+  Switch, Route, Link
 } from 'react-router-dom'
 import { connect } from 'react-redux'
 import { Navbar, Nav } from 'react-bootstrap'
@@ -17,8 +15,13 @@ import Skills from './components/skills/SkillList'
 import Spells from './components/spells/SpellList'
 import AddToFavorites from './components/generic/AddToFavorites'
 
+const talentList = require('./data/talents.json')
+const skillList = require('./data/skills.json')
+const spellsByGroup = require('./data/spells.json')
+
 const App = (props) => {
   console.log('data in redux store ', props)
+
   const Main = () => (
     <div>
       <h3>Warhammer Fantasy RPG utilities</h3>
@@ -34,7 +37,7 @@ const App = (props) => {
     <div>
       <Router>
         <Navbar>
-          <Navbar.Brand as={Link} to="/main">
+          <Navbar.Brand as={Link} to="/">
             WFRPG
           </Navbar.Brand>
           <Navbar.Collapse>
@@ -47,10 +50,10 @@ const App = (props) => {
         </Navbar>
 
         <Switch>
-          <Route exact path="/main"><Main /></Route>
-          <Route path="/skills"><Skills /></Route>
-          <Route path="/talents"><Talents /></Route>
-          <Route path="/spells"><Spells /></Route>
+          <Route exact path="/"><Main /></Route>
+          <Route path="/skills"><Skills skillList={skillList} /></Route>
+          <Route path="/talents"><Talents talentList={talentList} /></Route>
+          <Route path="/spells"><Spells spellsByGroup={spellsByGroup} /></Route>
         </Switch>
       </Router>
     </div>

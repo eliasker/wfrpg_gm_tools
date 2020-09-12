@@ -2,12 +2,11 @@ import React, { useState } from 'react'
 import SearchForm from '../generic/SearchForm'
 
 import Spell from './Spell'
-const spellGroups = require('../../data/spells.json')
 
 // TODO: selecting school of magic
 // TODO: CSS for spell groups
 // TODO: CSS for spells
-const Spells = () => {
+const Spells = ({ spellsByGroup }) => {
   const [searchInput, setSearchInput] = useState('')
 
   const Group = ({ group }) =>
@@ -28,14 +27,14 @@ const Spells = () => {
       <Spell spell={spell} key={spell.name} />
       : null)
 
-  const mapSpellGroups = () => spellGroups.groups.map(group => <Group group={group} key={group.name} />)
+  const mapSpellGroups = () => spellsByGroup.groups.map(group => <Group group={group} key={group.name} />)
 
   return (
     <div>
       <SearchForm
         searchInput={searchInput}
         setSearchInput={setSearchInput}
-        placeholder='Search Spells by name'
+        placeholder='Filter Spells by name'
       />
       {mapSpellGroups()}
     </div>

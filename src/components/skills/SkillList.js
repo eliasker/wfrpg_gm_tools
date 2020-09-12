@@ -2,10 +2,9 @@ import React, { useState } from 'react'
 
 import SearchForm from '../generic/SearchForm'
 import Skill from './Skill'
-const skillList = require('../../data/skills.json')
 
 // TODO: Add Table property to skills.json where needed
-const Skills = () => {
+const Skills = ({ skillList }) => {
   const [searchInput, setSearchInput] = useState('')
 
   const mapSkills = () => {
@@ -19,7 +18,7 @@ const Skills = () => {
       <SearchForm
         searchInput={searchInput}
         setSearchInput={setSearchInput}
-        placeholder='Search Skills by name'
+        placeholder='Filter Skills by name'
       />
       {mapSkills()}
     </div>
