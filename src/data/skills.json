@@ -1,7 +1,7 @@
 {
   "skills": [
     {
-      "id": 0,
+      "id":  "0",
       "name": "Animal Care (Int) advanced",
       "desc": [
         "The Animal Care Skill lets you tend and care for animals, and heal them should they fall sick or become wounded.",
@@ -11,7 +11,7 @@
       ]
     },
     {
-      "id": 1,
+      "id":  "1",
       "name": "Animal Training (Int) advanced, grouped",
       "desc": [
         "Animal Training represents your understanding of a particular type of animal, and your ability to train them. A successful use of the Skill allows you to identify the Trained abilities possessed by an animal belonging to your Specialisation (see page 118). The Animal Training Skill also allows you to undertake the Animal Training Endeavour between adventures (see page 196).",
@@ -21,7 +21,7 @@
       "specialisations": "Specialisations:  Demigryph, Dog, Horse, Pegasus, Pigeon"
     },
     {
-      "id": 2,
+      "id":  "2",
       "name": "Art (Dex) basic, grouped",
       "desc": [
         "Create works of art in your chosen medium. Not having access to appropriate Trade Tools will incur a penalty to your Test. The SL achieved determines the quality of the final piece. For complicated or large works of art, an Extended Test may be required. The Art Skill has little use in combat, but marble busts make marvellous improvised weapons."
@@ -30,14 +30,14 @@
       "specialisations": "Specialisations:  Cartography, Engraving, Mosaics, Painting, Sculpture, Tattoo, Weaving"
     },
     {
-      "id": 3,
+      "id":  "3",
       "name": "Athletics (Ag) basic",
       "desc": [
         "Your ability to run, jump and move with speed or grace, and to perform any general physical activity. Refer to Moving (see page 164) for details on using Athletics in combat movement."
       ]
     },
     {
-      "id": 4,
+      "id":  "4",
       "name": "Bribery (Fel) basic",
       "desc": [
         "Your ability to judge how likely a person is to accept a bribe, and how best to offer the bribe so they will accept it.",
@@ -47,7 +47,7 @@
       "example": "Example: Snorri is trying to bribe his way past a city watchman; a character of the Brass Tier 2, meaning they roll 4d10 Brass for Income. The GM decides the guard can be bribed and secretly rolls 21 on the 4d10, meaning the price for bribing the guard is 21 Brass. Letting Snorri through isn’t too risky for the watchman, and he does it often, so the GM doesn’t increase the bribe required. Snorri rolls 1 SL on his Bribery Test; so, he knows the watchman is open to a bribe, and has 2 guesses as to his price. Snorri’s first guess is 15 Brass, to which his GM replies ‘higher’. His second guess is 40, to which his GM replies ‘lower’. Snorri now knows he must bribe the watchman between 15 and 40 Brass, so decides to aim high, and offers 30. Smiling, the watchman waves Snorri through."
     },
     {
-      "id": 5,
+      "id":  "5",
       "name": "Channelling (WP) advanced, grouped",
       "desc": [
         "The Channelling Skill measures your ability to call upon and control the various Winds of Magic, and is solely used by the magic rules. Channelling is a special skill in that it is both Grouped, allowing for specialisations and also ungrouped, for those not properly trained to channel magic. See Chapter 8: Magic for details concerning this."
@@ -55,7 +55,7 @@
       "specialisations": "Specialisations: Aqshy, Azyr, Chamon, Dhar, Ghur, Ghyran, Hysh, Shyish, Ulgu (each is a different Wind of Magic, see Chapter 8: Magic for more on this)."
     },
     {
-      "id": 6,
+      "id":  "6",
       "name": "Charm (Fel) basic",
       "desc": [
         "Charm makes people think favourably of you, your opinions, and proposed actions. Passing an Opposed Charm/Cool Test allows you to influence the behaviour of one or more targets, up to a maximum number equal to your Fellowship Bonus + SL, affecting those with the lowest Willpower first. If a target is amenable to your Charm, the Test will be uncontested.",
@@ -66,7 +66,7 @@
       ]
     },
     {
-      "id": 7,
+      "id":  "7",
       "name": "Charm Animal (WP) basic",
       "desc": [
         "Your aptitude for befriending, quickly calming, or subjugating animals.",
@@ -75,14 +75,14 @@
       ]
     },
     {
-      "id": 8,
+      "id":  "8",
       "name": "Climb (S) basic",
       "desc": [
         "The ability to ascend steep or vertical surfaces. If time isn’t an issue, and a climb is relatively easy, anyone with Climb Skill is automatically assumed to be able to climb any reasonably small height. For any other climbing, refer to page 165, which also handles Climbing during combat. You may even find yourself climbing large opponents, though whether that is prudent is debatable. "
       ]
     },
     {
-      "id": 9,
+      "id":  "9",
       "name": "Consume Alcohol (T) basic",
       "desc": [
         "Your ability to handle alcohol without letting it cloud your judgment or render you senseless.",
@@ -91,7 +91,7 @@
       ]
     },
     {
-      "id": 10,
+      "id":  "10",
       "name": "Cool (WP) basic",
       "desc": [
         "Cool allows you to remain calm under stress, resist fear when faced with horror, and stick to your convictions. ",
@@ -99,7 +99,7 @@
       ]
     },
     {
-      "id": 11,
+      "id":  "11",
       "name": "Dodge (Ag) basic",
       "desc": [
         "Dodge is your ability to avoid things, through ducking, diving, and moving quickly, and is used extensively to sidestep falling rocks, incoming weapons, unexpected traps, and the like.",
@@ -107,7 +107,7 @@
       ]
     },
     {
-      "id": 12,
+      "id":  "12",
       "name": "Drive (Ag) basic",
       "desc": [
         "Drive lets you guide vehicles — most commonly simple carts and lumbering coaches, not to mention the more ‘experimental’ creations of the Imperial Engineers — along the roads of the Empire with as little incident as possible.Under normal circumstances, if you possess the Drive Skill, there is no need to Test. If conditions are less than ideal — perhaps the road is in poor condition, or the weather is terrible — a Drive Test will be required. If you do not possess the Drive Skill, you may be required to make a Test to carry out even basic manoeuvres. An Astounding Failure (-6) on a Drive Test means something bad has happened. Roll on the following table:TABLE",
@@ -116,14 +116,14 @@
       ]
     },
     {
-      "id": 13,
+      "id":  "13",
       "name": "Endurance (T) basic",
       "desc": [
         "The Endurance Skill is called upon when you must endure hardship, withstand deprivation, sit without moving for long periods of time, or survive harsh environments. In particular, Endurance is Tested to resist or recover from various Conditions (see page 167) and helps you recover lost Wounds. Refer to Chapter 5: Rules for more on this."
       ]
     },
     {
-      "id": 14,
+      "id":  "14",
       "name": "Entertain (Fel) basic, grouped",
       "desc": [
         "Allows you to delight crowds with the spoken word, perhaps by singing, acting, or attempting a few jokes. A successful use of the Entertain Skill means you have entertained patrons near enough to hear you; the SL indicates how well you have done.",
@@ -132,14 +132,14 @@
       "specialisations": "Specialisations:  Acting, Comedy, Singing, Storytelling"
     },
     {
-      "id": 15,
+      "id":  "15",
       "name": "Evaluate (Int) advanced",
       "desc": [
         "Lets you determine the value of rare artefacts, unusual trade goods, and works of art. Everybody is assumed to know the relative worth of general items, but a successful use of the Evaluate allows you to identify the value of curious and unique items. A successful Evaluate Test may also alert you if the goods (or coins) you are studying are counterfeit — this Test will usually be Opposed by the forger’s SL on their Art or Trade Test. Your GM may apply modifiers based on just how rare or obscure the item is, or on your character’s particular expertise or background."
       ]
     },
     {
-      "id": 16,
+      "id":  "16",
       "name": "Gamble (Int) basic",
       "desc": [
         "Allows you to measure the likelihood that a bet will pay off, as well as successfully engage in various games of chance. ",
@@ -148,7 +148,7 @@
       ]
     },
     {
-      "id": 17,
+      "id":  "17",
       "name": "Gossip (Fel) basic",
       "desc": [
         "You can quickly ferret out interesting and useful news, and spread rumours of your own. A successful Gossip Test means you have found out one useful piece of information, which your GM can impart to you, about the local area. Each SL either offers you an additional piece of information, or the chance to spread a rumour to a number of individuals equal to your Fellowship Bonus. The time required for a Gossip Test depends on how circumspect the players are being, and how busy the area is, as determined by the GM. ",
@@ -157,14 +157,14 @@
       ]
     },
     {
-      "id": 18,
+      "id":  "18",
       "name": "Haggle (Fel) basic",
       "desc": [
         "Haggle allows you to secure better deals when negotiating with others. In general, Haggle is used to see whether you do, or do not, make a good deal, most commonly with an Opposed HaggleTest. Specifically, it can be used when shopping to secure better prices. For information on this, refer to Chapter 11: Consumers’ Guide."
       ]
     },
     {
-      "id": 19,
+      "id":  "19",
       "name": "Heal (Int) advanced",
       "desc": [
         "You’ve been trained to deal with injuries and diseases. A successful Heal Test allows you to do one of the following: TABLE",
@@ -175,7 +175,7 @@
       ]
     },
     {
-      "id": 20,
+      "id":  "20",
       "name": "Intimidate (S) basic",
       "desc": [
         "Allows you to coerce or frighten sentient creatures. The precise manner of initiating an Intimidate Test depends on context: while it is generally accompanied by an overt threat, sometimes a subtle implication or even a look is enough. Intimidate is almost always Opposed by your target’s Cool Skill; if successful, you can intimidate a number of targets up to your Strength Bonus + SL. Each will react to Intimidate based on their individual personalities and how successful you were in menacing them, but in all cases, they will back down or move out of the way and will not speak out against you, or they will alternatively accept combat is the only way forward and prepare their weapons.",
@@ -184,7 +184,7 @@
       "example": "Example: Facing a group of footpads, Svetlana the Strong rolls 4 SL on her Intimidate Test. Combined with her SB of 5, this means she can affect up to 9 targets, more than enough to impact all three footpads who now Fear Svetlana. As she has won by 3 SL, she gains +1 Advantage point until the end of her next turn. In the next round, she ‘attacks’ the footpads using her Intimidate, intending to scare them into leaving her be. However, she fails the Test, and the footpads realise they outnumber her, and are armed..."
     },
     {
-      "id": 21,
+      "id":  "21",
       "name": "Intuition (I) basic",
       "desc": [
         "The Intuition Skill allows you to get a feel for your surroundings, leading you to notice when something is wrong, and gives you a sense of when people may be hiding something from you. A successful use of the Intuition Skill gives you subtle or implicit intelligence relating to your environment, determined by your GM. This may be information such as whether someone believes what they are saying, what the general attitude is towards the local noble, or if the helpful local’s motives are as pure as they seem. If someone is actively trying to hide their intent, they may resist your Intuition with Cool or Entertain (Acting).",
@@ -192,7 +192,7 @@
       ]
     },
     {
-      "id": 22,
+      "id":  "22",
       "name": "Language (Int) advanced, grouped",
       "desc": [
         "The Language Skill grants you access to extra languages beyond your native tongue. All characters are automatically assumed to be able to speak ‘Reikspiel’ — the language of the Empire — and their native language (if your character has one different to Reikspiel), without ever having to Test. If your game is not set in the Empire, replace Reikspiel with the local language. If you possess a Language Skill, you are generally able to make yourself understood in that language, or to understand simple concepts. You will be asked to Test your Language Skill when a particularly difficult concept must be conveyed, or an obscure dialect or vocabulary is employed. ",
@@ -202,7 +202,7 @@
       "options": "Options: Battle tongue represents a series of simple commands and gestures that may be made in the heat of combat. players with language (Battle Tongue) may communicate briefly with one another during combat without penalty. those without the skill cannot quickly coordinate their attacks or discuss strategy once combat begins. "
     },
     {
-      "id": 23,
+      "id":  "23",
       "name": "Leadership (Fel) basic",
       "desc": [
         "A measure of your ability to lead others and command their respect. While most often associated with martial situations, a resolute leader can quickly direct a fast response to a fire or other such calamity, and nobles use the Skill frequently to command their lessers.",
@@ -213,7 +213,7 @@
       "example": "Example: Lord Ludwig von Schemp has been watching his two bodyguards discourse with some ruffians for three Rounds, using his Intuition Skill to build up 3 Advantage. Feeling it is going nowhere, he issues a peremptory order to attack the ringleader; passing his Leadership Test with 5 SL, he gives one bodyguard 2 of his Advantage, and the remaining bodyguard 1 Advantage, hoping this will bring a swift end to proceedings."
     },
     {
-      "id": 24,
+      "id":  "24",
       "name": "Lore (Int)advanced, grouped",
       "desc": [
         "Having a Lore Skill means you’ve been formally taught, or have somehow otherwise learned, a branch of specialist knowledge. Possessing a Lore Skill means you are broadly knowledgeable in the specialisation and don’t need to make a Test in order for the GM to supply you with relevant facts. If you are seeking specific, less well-known information, you will be required to make a Lore Test, modified by how obscure the information is, with the SL indicating how much detail you recall.",
@@ -222,7 +222,7 @@
       "specialisations": "Specialisations:  Engineering, Geology, Heraldry, History, Law, Magick, Metallurgy, Science, Theology"
     },
     {
-      "id": 25,
+      "id":  "25",
       "name": "Melee (WS) basic, grouped",
       "desc": [
         "The Melee Skill represents specific training with a single type of close combat weaponry. Each Melee Specialisation indicates training in using a specific class of weapon. If you don’t have the correct Specialisation for a weapon you wish to use, refer to Chapter 11: Consumers’ Guide for the correct weapon entry, and what penalties you will suffer.See Chapter 5: Rules for more detail about combat and using the Melee Skill."
@@ -230,21 +230,21 @@
       "specialisations": "Specialisations:  Basic, Brawling, Cavalry, Fencing, Flail, Parry, Pole-Arm, Two-Handed"
     },
     {
-      "id": 26,
+      "id":  "26",
       "name": "Navigation (I) basic",
       "desc": [
         "Navigation allows you to find your way in the wilderness using landmarks, stellar bodies or maps. Possessing the Navigation Skill means you know roughly where you are, and can find your way between well-known landmarks without a Test. A Test is only required if you are disoriented or travelling far from the beaten path, with success showing you the correct direction, or allowing you to avoid mishap. If you are navigating a long journey, your GM may ask for an extended Navigation Test, modified by conditions, visible landmarks, and access to reliable geographical information. The SL required to succeed depends on how far the destination is, with each Test representing between an hour and a day’s travel, depending on the nature of the journey."
       ]
     },
     {
-      "id": 27,
+      "id":  "27",
       "name": "Outdoor Survival (Int) basic",
       "desc": [
         "The Outdoor Survival Skill is used to survive in the wild, including the ability to fish, hunt, forage, and build fires and shelters. Experienced travellers are skilled at reading the signs of incoming inclement weather and finding the spoor of various dangerous beasts.When camping, make an Outdoor Survival Test, modified by the harshness of conditions — for instance, a Test is Challenging (+0) if it is raining, Hard (–20) in a storm. A successful Test indicates you can provide yourself sustenance and shelter for the night. Each SL allows you to provide for one more character. If the Test is failed, you must make a Challenging (+0) Endurance Test or receive the Fatigued Condition. If you suffer an Astounding Failure, something untoward has happened, as determined by the GM; perhaps your camp is attacked in the night?When fighting in the wilderness, you may make an Outdoor Survival Test to receive +1 Advantage, in the same way as Intuition, to a maximum number of Advantage equal to your Intelligence Bonus, as you spy out treacherous and advantageous terrain that you can best use to your advantage. TABLE"
       ]
     },
     {
-      "id": 28,
+      "id":  "28",
       "name": "Perception (I) basic",
       "desc": [
         "Your ability to notice things with your senses — sight, smell, hearing, touch, and taste, and any other senses you may possess, such as magical or non-Human senses. Your GM may ask for a Perception Test to detect something, like movement behind the treeline, the presence of a trap, or someone following you, modified by how easy it is to notice. Perception is also used to resist attempts to hide things through Skills such as Sleight of Hand or Stealth.",
@@ -252,7 +252,7 @@
       ]
     },
     {
-      "id": 29,
+      "id":  "29",
       "name": "Perform (Ag) advanced, grouped",
       "desc": [
         "You’ve learned a physically demanding art, perhaps as a way of making a living, maybe as a street entertainer or as part of a travelling carnival. A successful use of the Perform Skill allows you to entertain all patrons close enough to see and hear you; the SL indicate how well you have done.",
@@ -261,7 +261,7 @@
       "specialisations": "Specialisations:  Acrobatics, Clowning, Dancing, Firebreathing, Juggling, Miming, Rope Walking"
     },
     {
-      "id": 30,
+      "id":  "30",
       "name": "Pick Lock (Dex) advanced",
       "desc": [
         "You know the mechanisms of locks and how to open them without their proper keys. Picking a lock is often an Extended Test, with the number of SL required to open the lock dependent on the complexity of the lock.",
@@ -269,7 +269,7 @@
       ]
     },
     {
-      "id": 31,
+      "id":  "31",
       "name": "Play (Dex) advanced, grouped",
       "desc": [
         "Your ability to make music with an instrument, hopefully well enough to impress others. A successful Play Test lets you entertain those near enough to see and hear you; the SL indicates the quality of the piece played."
@@ -277,7 +277,7 @@
       "specialisations": "Specialisations: Bagpipe, Lute, Harpsichord, Horn, Violin"
     },
     {
-      "id": 32,
+      "id":  "32",
       "name": "Pray (Fel) advanced",
       "desc": [
         "Your ability to invoke, or otherwise commune with, a deity. For more information on using the Pray Skill to seek divine intervention, see Chapter 7: Religion & Belief.",
@@ -286,7 +286,7 @@
       ]
     },
     {
-      "id": 33,
+      "id":  "33",
       "name": "Ranged (BS) advanced, grouped",
       "desc": [
         "Whilst anyone can throw a rock simply using their Ballistic Skill, it takes training and practice to use weapons like bows and pistols.Each Ranged Specialisation is specific to a group of ranged weapons. If you don’t have the Ranged Specialisation for a weapon you wish to use, refer to Chapter 11: Consumers’ Guide to see what penalties you will suffer when using the weapon. See Chapter 5: Rules for full detail about ranged combat."
@@ -294,7 +294,7 @@
       "specialisations": "Specialisations:  Blackpowder, Bow, Crossbow, Engineering, Entangling, Explosives, Sling, Throwing"
     },
     {
-      "id": 34,
+      "id":  "34",
       "name": "Research (Int) advanced",
       "desc": [
         "How adept you are at pulling useful and frequently obscure knowledge from libraries and other such storehouses of information. Research requires you have the Read/Write Talent (see page142).",
@@ -303,7 +303,7 @@
       ]
     },
     {
-      "id": 35,
+      "id":  "35",
       "name": "Ride (Ag) basic, grouped",
       "desc": [
         "How proficient you are at riding a particular group of animals; Ride (Horse), for example, will let you ride Horses, Mules, Donkeys, and similar. You’ll only need to make a Test when doing something out of the ordinary, such as racing, dressage, traversing dangerous terrain, or charging into combat. Otherwise, if you have at least one Advance in the Skill, you are presumed to be able to ride around without need of a Test.",
@@ -312,14 +312,14 @@
       "specialisations": "Specialisations:  Demigryph, Great Wolf, Griffon, Horse, Pegasus"
     },
     {
-      "id": 36,
+      "id":  "36",
       "name": "Row (S) basic",
       "desc": [
         "Your prowess at pulling an oar and moving a boat through the water. The Row Skill is typically only used when racing, navigating rapids, desperately avoiding Bog Octopuses, or similar unusual or dangerous feats. Anyone with the Skill is automatically presumed to be able to scull about a pond, or over a gentle river, without a Test. Those without the skill may have to make a Test for anything but the most basic manoeuvres."
       ]
     },
     {
-      "id": 37,
+      "id":  "37",
       "name": "Sail (Ag) advanced, grouped",
       "desc": [
         "Your ability to operate and manoeuvre a sailing vessel — including knotwork, steering, gauging the wind, and more. Assuming you have enough trained crew for your vessel, you only use the Sail Skill when you must push your vessel to perform, either by racing, navigating particularly dangerous shoals, struggling against bad weather, or similar difficulties. Simply sailing with a gentle wind, or guiding a ship downriver, doesn’t require a Test for those with Sail. The skill can also be used for sailing-related activities like tying knots, or tying others up in knots.",
@@ -328,7 +328,7 @@
       "specialisations": "Specialisations:  Barge, Caravel, Cog, Frigate, Wolfship"
     },
     {
-      "id": 38,
+      "id":  "38",
       "name": "Secret Signs (Int) advanced, grouped",
       "desc": [
         "You’ve been taught how to use clandestine markings only intelligible to members of a select group. There are all manner of reasons why someone may want to leave a secret message: vagabonds might indicate which homeowners are likely to offer alms, thieves may want to indicate weaknesses, or likely marks, while scouts may want to warn one another about a dangerous monster’s lair nearby.",
@@ -337,7 +337,7 @@
       "specialisations": "Specialisations:  Grey Order, Guild (any one), Ranger, Scout, Thief, Vagabond"
     },
     {
-      "id": 39,
+      "id":  "39",
       "name": "Set Trap (Dex) advanced",
       "desc": [
         "From a simple snare, or bear-trap, to more spectacular devices like Von Grizzel’s Thief-Render, players are unlikely to venture far in the Old World without encountering traps. The Set Trap Skill measures your ability to set and disarm traps of all varieties. Anyone with the skill is automatically assumed to be able to activate and disarm traps given enough time. A Test is normally only required if attempting to use the Skill swiftly or if otherwise under pressure, or if the trap is especially complex. A selection of simple traps can be found in Chapter 11: Consumers’ Guide.",
@@ -345,7 +345,7 @@
       ]
     },
     {
-      "id": 40,
+      "id":  "40",
       "name": "Sleight of Hand (Dex) advanced",
       "desc": [
         "Lets you pick pockets, palm objects, and perform minor tricks of prestidigitation, as well as cheating with games of chance. This Skill is typically Opposed by the Perception Skill of your target; success means you have palmed the object, picked the pocket, or swapped the cards, while a Marginal Success (+0 to +1) may suggest that your nefarious misdeeds have left your opponent suspicious.",
@@ -354,7 +354,7 @@
       ]
     },
     {
-      "id": 41,
+      "id":  "41",
       "name": "Stealth (Ag) basic, grouped",
       "desc": [
         "Allows you to creep quietly and conceal yourself in shadows more readily than most. Stealth is generally Opposed by an opponent’s Perception Skill, and Tests will be modified by how dark or well concealed your route is, as well as how circumspectly you are dressed. An Impressive or Astounding Failure on a Stealth Test will likely draw the immediate attention of the enemies you were trying to avoid in the first place.Stealth has many potential applications in combat, most usefully to hide oneself in preparation for an Ambush, or to creep around an opponent in order to attack from behind. See Chapter 5: Rules for the implications of this. Of course, you can also use the Skill to escape a conflict unseen..."
@@ -363,7 +363,7 @@
       "options": "Options: Shadowing is following someone secretly. To do this requires a Combined perception and Stealth Test (see page 155). If the target is actively trying to lose a tail, it is Opposed with the target’s Stealth Skill. If you pass the perception Test, and fail the Stealth Test you follow your target, but are spotted. If you fail the perception Test, yet pass the Stealth Test, you lose your target, but go unnoticed."
     },
     {
-      "id": 42,
+      "id":  "42",
       "name": "Swim (S) advanced",
       "desc": [
         "Your ability to swim in water without drowning. If you have the Swim Skill, you are automatically presumed to be able to swim freely without a Test. But if you find yourself in difficult currents, racing, or fleeing from an oversized shark sent by Stromfels, the God of Drowning, a Test will be required. This may be modified by the condition of the water, or how encumbered you are by clothes, armour, and other trappings.",
@@ -371,7 +371,7 @@
       ]
     },
     {
-      "id": 43,
+      "id":  "43",
       "name": "Track (I) advanced",
       "desc": [
         "Your ability to follow subtle trails left by others. Track is used to follow difficult trails across the wilderness. This is not a skill for following a set of footprints in the snow — a simple Perception test covers that — Track involves deeper knowledge and awareness used to recognise the subtle signs of a quarry’s passage. You can also attempt to hide your trail, in which case use your Track skill to oppose your pursuer’s Track Test.",
@@ -379,7 +379,7 @@
       ]
     },
     {
-      "id": 44,
+      "id":  "44",
       "name": "Trade (Dex) advanced, grouped",
       "desc": [
         "Most folk of the Reikland follow a trade; even adventurers often have a more reliable, or respectable career to fall back on, between bouts of hair-raising, bowel-loosening excitement.",
