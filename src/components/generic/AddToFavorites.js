@@ -10,9 +10,9 @@ const AddToFavorites = () => {
   const toggleAdded = () => setAdded(!added)
 
   return !added ?
-    <img className='clickable' src={addIcon} alt='add icon' onClick={() => toggleAdded()} />
+    <img className='clickable icon' src={addIcon} alt='add icon' onClick={() => toggleAdded()} />
     :
-    <img className='clickable' src={removeIcon} alt='remove icon' onClick={() => toggleAdded()} />
+    <img className='clickable icon' src={removeIcon} alt='remove icon' onClick={() => toggleAdded()} />
 }
 
 export default AddToFavorites

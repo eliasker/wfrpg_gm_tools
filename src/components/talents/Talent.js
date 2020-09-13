@@ -8,21 +8,16 @@ const Talent = ({ talent }) => {
 
   return (
     <div>
-      <div>
-        <h4 className='clickable' onClick={() => toggleExpanded()}>{talent.name}</h4>
-        {
-          // TODO: style & function
-          /*
-        <div className='inline-div-left'>
+      <header className='icon-header-row-container'>
+        <div className=''>
           <h4 className='clickable' onClick={() => toggleExpanded()}>{talent.name}</h4>
         </div>
-        
-        <div className='inline-div-right'>
+
+        <div className='icon'>
           <AddToFavorites />
         </div>
-        */
-        }
-      </div>
+      </header>
+
       {expanded ?
         <div>
           <p>{talent.max}</p>

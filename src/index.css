@@ -11,18 +11,16 @@
   cursor: pointer;
 }
 
-/*
-.inline-div-container {}
-*/
-
-.inline-div-left {
-  width: 50%;
-  float: left;
+.icon-header-row-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.inline-div-right {
-  width: 50%;
-  float: left;
+.icon {
+  width: 30px;
+  height: 30px;
+  flex-shrink: 0;
 }
 
 .navbar {
