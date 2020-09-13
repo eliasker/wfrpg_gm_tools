@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './index.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import {
@@ -20,6 +20,20 @@ const spellsByGroup = require('./data/spells.json')
 
 const App = (props) => {
   console.log('data in redux store ', props)
+  const [favorites, setFavorites] = useState([])
+
+  const addToFavs = child => {
+    console.log('adding', child.id)
+    setFavorites(favorites.concat(child))
+  }
+  
+  const removeFromFavs = child => {
+    console.log('removing', child.id);
+    const newFavs = favorites.filter(f => f.id !== child.id)
+    setFavorites(newFavs)
+  }
+
+  console.log(favorites)
 
   const Main = () => (
     <div>
@@ -48,9 +62,9 @@ const App = (props) => {
 
         <Switch>
           <Route exact path='/'><Main /></Route>
-          <Route path='/skills'><Skills skillList={skillList} /></Route>
-          <Route path='/talents'><Talents talentList={talentList} /></Route>
-          <Route path='/spells'><Spells spellsByGroup={spellsByGroup} /></Route>
+          <Route path='/skills'><Skills skillList={skillList} addToFavs={addToFavs} removeFromFavs={removeFromFavs} /></Route>
+          <Route path='/talents'><Talents talentList={talentList} addToFavs={addToFavs} removeFromFavs={removeFromFavs} /></Route>
+          <Route path='/spells'><Spells spellsByGroup={spellsByGroup} addToFavs={addToFavs} removeFromFavs={removeFromFavs} /></Route>
         </Switch>
       </Router>
     </div>

@@ -4,13 +4,13 @@ import SearchForm from '../generic/SearchForm'
 import Talent from './Talent'
 
 // TODO: Add Table property to Talents.json where needed
-const Talents = ({ talentList }) => {
+const Talents = ({ talentList, addToFavs, removeFromFavs }) => {
   const [searchInput, setSearchInput] = useState('')
 
   const mapTalents = () => {
     return talentList.talents
       .filter(t => t.name.toLowerCase().includes(searchInput.toLowerCase()))
-      .map(tf => <Talent key={tf.id} talent={tf} />)
+      .map(tf => <Talent key={tf.id} talent={tf} addToFavs={addToFavs} removeFromFavs={removeFromFavs} />)
   }
 
   return (

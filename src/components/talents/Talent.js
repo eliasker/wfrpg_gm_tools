@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import AddToFavorites from '../generic/AddToFavorites'
 
-const Talent = ({ talent }) => {
+const Talent = ({ talent, addToFavs, removeFromFavs }) => {
   const [expanded, setExpanded] = useState(false)
 
   const toggleExpanded = () => setExpanded(!expanded)
@@ -14,7 +14,7 @@ const Talent = ({ talent }) => {
         </div>
 
         <div className='icon'>
-          <AddToFavorites />
+          <AddToFavorites child={talent} addToFavs={addToFavs} removeFromFavs={removeFromFavs} />
         </div>
       </header>
 
