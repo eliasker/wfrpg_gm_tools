@@ -8,7 +8,7 @@ const Talents = ({ talentList, addToFavs, removeFromFavs }) => {
   const [searchInput, setSearchInput] = useState('')
 
   const mapTalents = () => {
-    return talentList.talents
+    return talentList
       .filter(t => t.name.toLowerCase().includes(searchInput.toLowerCase()))
       .map(tf => <Talent key={tf.id} talent={tf} addToFavs={addToFavs} removeFromFavs={removeFromFavs} />)
   }

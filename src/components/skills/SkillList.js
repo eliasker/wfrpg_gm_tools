@@ -8,7 +8,7 @@ const Skills = ({ skillList }) => {
   const [searchInput, setSearchInput] = useState('')
 
   const mapSkills = () => {
-    return skillList.skills
+    return skillList
       .filter(s => s.name.toLowerCase().includes(searchInput.toLowerCase()))
       .map(sf => <Skill key={sf.id} skill={sf} />)
   }

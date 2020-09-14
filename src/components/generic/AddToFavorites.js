@@ -6,7 +6,6 @@ import removeIcon from '../../assets/remove_icon.svg'
 // TODO: pin -icon better?
 const AddToFavorites = ({ child, addToFavs, removeFromFavs }) => {
   const [added, setAdded] = useState(false)
-
   const toggleAdded = () => {
     added ? removeFromFavs(child) : addToFavs(child)
     setAdded(!added)
