@@ -1,9 +1,6 @@
 # Warhammer Fantasy RPG - Utilities
-## Branch for testing hosting at GitHub pages
+Webapp -branch hosted here: https://eliasker.github.io/wfrpg_gm_tools/ 
 
-#### Talents 
-Talents are listed and searchable by name.
-#### Skills 
-Skills are listed and searchable by name.
-#### Spells
-Spells are listed and searchable by name or spellschool name.
+#### Features
+1) Searchable Talents, Skills & Spells
+2) Add Talents & Skills to favorites
