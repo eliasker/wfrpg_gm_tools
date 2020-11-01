@@ -4,8 +4,11 @@
  * @params filterInput {string} String that is compared to strings in array 
  * @returns filtered array containing strings from initial array that include filterInput
  */
-function arrayFilter(array, filterInput) {
+export function arrayFilter(array, filterInput) {
   return array.filter(str => str.toLowerCase().includes(filterInput.toLowerCase()))
 }
 
-export default arrayFilter
+
+export function replaceItemAtIndex(array, index, newValue) {
+  return [...array.slice(0, index), newValue, ...array.slice(index + 1)]
+}

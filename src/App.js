@@ -1,6 +1,4 @@
 import React from 'react'
-import './index.css'
-import 'bootstrap/dist/css/bootstrap.min.css'
 import {
   BrowserRouter as Router,
   Switch,
@@ -9,20 +7,35 @@ import {
 } from 'react-router-dom'
 
 import { Navbar, Nav } from 'react-bootstrap'
-import Talents from './components/rules/Talents'
-import Skills from './components/rules/Skills'
+import './index.css'
+import 'bootstrap/dist/css/bootstrap.min.css'
+
+import { RecoilRoot, useRecoilValue } from 'recoil'
+import { selectedTalents, selectedSkills } from './recoil/selectors'
+
+import TalentsPage from './components/rules/TalentsPage'
+import SkillsPage from './components/rules/SkillsPage'
 import Spells from './components/rules/Spells'
+import TalentList from './components/rules/TalentList'
+import SkillList from './components/rules/SkillList'
 
 const App = () => {
-
-  const Main = () => (
-    <div>
-      <h3>Warhammer Fantasy RPG utilities</h3>
-    </div>
-  )
+  // TODO: Move to separate component
+  // TODO: Alternate description for empty lists
+  const Main = () => {
+    const talents = useRecoilValue(selectedTalents('Selected'))
+    const skills = useRecoilValue(selectedSkills('Selected'))
+    return (
+      <div>
+        <h3>Warhammer Fantasy RPG utilities</h3>
+        <SkillList skills={skills} />
+        <TalentList talents={talents} />
+      </div>
+    )
+  }
 
   return (
-    <div>
+    <RecoilRoot>
       <Router>
         <Navbar>
           <Navbar.Brand as={Link} to="/">
@@ -39,12 +52,12 @@ const App = () => {
 
         <Switch>
           <Route exact path="/"><Main /></Route>
-          <Route path="/skills"><Skills /></Route>
-          <Route path="/talents"><Talents /></Route>
+          <Route path="/skills"><SkillsPage /></Route>
+          <Route path="/talents"><TalentsPage /></Route>
           <Route path="/spells"><Spells /></Route>
         </Switch>
       </Router>
-    </div>
+    </RecoilRoot>
   )
 }
 

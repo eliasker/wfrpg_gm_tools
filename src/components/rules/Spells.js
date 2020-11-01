@@ -1,13 +1,15 @@
 import React, { useState } from 'react'
-import SearchForm from '../generic/SearchForm'
+import { useRecoilValue } from 'recoil'
 
-const spellGroups = require('../../data/spells.json')
+import { spellGroupState } from '../../recoil/atoms'
+import SearchForm from '../generic/SearchForm'
 
 // TODO: selecting school of magic
 // TODO: CSS for spell groups
 // TODO: CSS for spells
 // TODO: Spell component & Spell group component to separate file?
 const Spells = () => {
+  const spellGroups = useRecoilValue(spellGroupState)
   const [searchInput, setSearchInput] = useState('')
 
   const Group = ({ group }) =>
@@ -21,24 +23,24 @@ const Spells = () => {
       :
       mapSpells(group.spells)
 
-  const Spell = ({ spell }) => 
-      <div>
-        <h3>{spell.name}</h3>
-        <p>{spell.CN}</p>
-        <p>{spell.range}</p>
-        <p>{spell.target}</p>
-        <p>{spell.duration}</p>
-        <p>{spell.desc}</p>
-      </div>
+  const Spell = ({ spell }) =>
+    <div>
+      <h3>{spell.name}</h3>
+      <p>{spell.CN}</p>
+      <p>{spell.range}</p>
+      <p>{spell.target}</p>
+      <p>{spell.duration}</p>
+      <p>{spell.desc}</p>
+    </div>
 
   const mapAllSpells = (spells) => spells.map(spell => <Spell spell={spell} key={spell.name} />)
-  
+
   const mapSpells = (spells) => spells.map(spell =>
     spell.name.toLowerCase().includes(searchInput.toLowerCase()) ?
       <Spell spell={spell} key={spell.name} />
       : null)
-  
-      const mapSpellGroups = () => spellGroups.groups.map(group => <Group group={group} key={group.name} />)
+
+  const mapSpellGroups = () => spellGroups.map(group => <Group group={group} key={group.name} />)
 
   return (
     <div>
