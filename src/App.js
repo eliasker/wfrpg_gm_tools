@@ -1,6 +1,6 @@
 import React from 'react'
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Switch,
   Route,
   Link
@@ -20,7 +20,7 @@ import Spells from './components/rules/Spells'
 const App = () => {
   return (
     <RecoilRoot>
-      <Router>
+      <Router basename="/">
         <Navbar>
           <Navbar.Brand as={Link} to="/">
             WFRPG
