@@ -25,7 +25,7 @@ const Spells = () => {
 
   const Spell = ({ spell }) =>
     <div>
-      <h3>{spell.name}</h3>
+      <h4>{spell.name}</h4>
       <p>{spell.CN}</p>
       <p>{spell.range}</p>
       <p>{spell.target}</p>

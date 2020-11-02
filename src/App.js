@@ -10,30 +10,14 @@ import { Navbar, Nav } from 'react-bootstrap'
 import './index.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
-import { RecoilRoot, useRecoilValue } from 'recoil'
-import { selectedTalents, selectedSkills } from './recoil/selectors'
+import { RecoilRoot } from 'recoil'
 
+import FrontPage from './components/FrontPage'
 import TalentsPage from './components/rules/TalentsPage'
 import SkillsPage from './components/rules/SkillsPage'
 import Spells from './components/rules/Spells'
-import TalentList from './components/rules/TalentList'
-import SkillList from './components/rules/SkillList'
 
 const App = () => {
-  // TODO: Move to separate component
-  // TODO: Alternate description for empty lists
-  const Main = () => {
-    const talents = useRecoilValue(selectedTalents('Selected'))
-    const skills = useRecoilValue(selectedSkills('Selected'))
-    return (
-      <div>
-        <h3>Warhammer Fantasy RPG utilities</h3>
-        <SkillList skills={skills} />
-        <TalentList talents={talents} />
-      </div>
-    )
-  }
-
   return (
     <RecoilRoot>
       <Router>
@@ -51,7 +35,7 @@ const App = () => {
         </Navbar>
 
         <Switch>
-          <Route exact path="/"><Main /></Route>
+          <Route exact path="/"><FrontPage /></Route>
           <Route path="/skills"><SkillsPage /></Route>
           <Route path="/talents"><TalentsPage /></Route>
           <Route path="/spells"><Spells /></Route>

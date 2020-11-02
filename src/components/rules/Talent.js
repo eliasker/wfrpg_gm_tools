@@ -17,7 +17,7 @@ const Talent = ({ talent }) => {
 
   return (
     <div>
-      <h3>{talent.name}</h3>
+      <h4>{talent.name}</h4>
       <input type="checkbox"
         checked={talent.isSelected}
         onChange={toggleSelected}

@@ -15,13 +15,12 @@ const Skill = ({ skill }) => {
     setSkillList(newList)
   }
 
-  // FIXME: key={child} :DDD
   const mapDesc = (array) => array.map(child =>
-    <p key={child}>{child}</p>)
+    <p key={skill.id + array.indexOf(child)}>{child}</p>)
 
   return (
     <div key={skill.id}>
-      <h3>{skill.name}</h3>
+      <h4>{skill.name}</h4>
       <input type="checkbox"
         checked={skill.isSelected}
         onChange={toggleSelected}
