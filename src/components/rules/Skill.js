@@ -1,10 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useRecoilState } from 'recoil'
 import { skillState } from '../../recoil/atoms'
 import { replaceItemAtIndex } from '../../util/arrayUtils'
 
 const Skill = ({ skill }) => {
   const [skillList, setSkillList] = useRecoilState(skillState)
+  const [expanded, setExpanded] = useState(false)
 
   const toggleSelected = () => {
     const newList = replaceItemAtIndex(skillList, skill.id, {
@@ -19,16 +20,24 @@ const Skill = ({ skill }) => {
     <p key={skill.id + array.indexOf(child)}>{child}</p>)
 
   return (
-    <div key={skill.id}>
-      <h4>{skill.name}</h4>
-      <input type="checkbox"
-        checked={skill.isSelected}
-        onChange={toggleSelected}
-      />
-      {mapDesc(skill.desc)}
-      <p>{skill.example}</p>
-      <p>{skill.options}</p>
-      <p>{skill.specialisations}</p>
+    <div className="item-container">
+      <div className="item-header-container">
+        <h4 onClick={() => setExpanded(!expanded)}
+          className="clickable">{skill.name}</h4>
+        <input
+          type="checkbox"
+          checked={skill.isSelected}
+          onChange={toggleSelected}
+        />
+      </div>
+      {expanded ?
+        <>
+          {mapDesc(skill.desc)}
+          <p>{skill.example}</p>
+          <p>{skill.options}</p>
+          <p>{skill.specialisations}</p>
+        </>
+        : null}
     </div>
   )
 }

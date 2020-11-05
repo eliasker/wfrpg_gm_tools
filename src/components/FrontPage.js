@@ -57,16 +57,15 @@ const FrontPage = () => {
   }
 
   return (
-    <div>
-      <h3>Warhammer Fantasy RPG utilities</h3>
+    <div className="content-container">
       <h4>Favorites:</h4>
-      <button onClick={() => saveState(talents, skills)}>Save</button>
-      <button onClick={() => loadSaved()}>Load</button>
-      <button onClick={() => clearState()}>Clear</button>
-
+      <div className="button-container">
+        <button onClick={() => saveState(talents, skills)}>Save</button>
+        <button onClick={() => loadSaved()}>Load</button>
+        <button onClick={() => clearState()}>Clear</button>
+      </div>
       <TalentList talents={talents} />
       <SkillList skills={skills} />
-      <p>Selecting spells in todo :P</p>
     </div>
   )
 }

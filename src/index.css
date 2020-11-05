@@ -1,21 +1,42 @@
-.d100Input{
-  width: 3em;
-}
-
-.tableImage {
-  min-width: 800px;
-  max-width: 80%;
-}
-
-.pointer:hover {
-  cursor: pointer;
-}
-
+/*Navigation*/
 .navbar {
-  display:flex;
+  display: flex;
   align-items: center;
 }
 
+/*
 .navitems {
-  margin-left: 10px;
+  border-left: #222222 2px solid;
+}
+*/
+
+/*Content*/
+/*Container for pages in app*/
+.content-container {
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+/*Container for items in pages*/
+.item-container {
+  margin: 4px;
+  border: solid #222222 2px;
+  padding: 2px;
+  max-width: 700px;
+}
+
+/*Aligns two items in container opposite each other*/
+.item-header-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*Margin matches item-container, TODO: separate when needed */
+.search-container,
+.button-container {
+  margin: 4px;
+}
+
+.clickable:hover {
+  cursor: pointer;
 }

@@ -15,7 +15,7 @@ const Spells = () => {
   const Group = ({ group }) =>
     group.name.toLowerCase().includes(searchInput.toLowerCase()) ?
       <div>
-        <h3>{group.name}</h3>
+        <h4>{group.name}</h4>
         <p>{group.desc}</p>
         <p>{group.ingredients}</p>
         {mapAllSpells(group.spells)}
@@ -23,17 +23,29 @@ const Spells = () => {
       :
       mapSpells(group.spells)
 
-  const Spell = ({ spell }) =>
-    <div>
-      <h4>{spell.name}</h4>
-      <p>{spell.CN}</p>
-      <p>{spell.range}</p>
-      <p>{spell.target}</p>
-      <p>{spell.duration}</p>
-      <p>{spell.desc}</p>
-    </div>
+  const Spell = ({ spell }) => {
+    const [expanded, setExpanded] = useState(false)
+    return (
+      <div className="item-container">
+        <div className="item-header-container">
+          <h4 onClick={() => setExpanded(!expanded)}
+            className="clickable">{spell.name}</h4>
+        </div>
+        {expanded ?
+          <>
+            <p>{spell.CN}</p>
+            <p>{spell.range}</p>
+            <p>{spell.target}</p>
+            <p>{spell.duration}</p>
+            <p>{spell.desc}</p>
+          </>
+          : null}
+      </div>
+    )
+  }
 
-  const mapAllSpells = (spells) => spells.map(spell => <Spell spell={spell} key={spell.name} />)
+  const mapAllSpells = (spells) => spells.map(spell =>
+    <Spell spell={spell} key={spell.name} />)
 
   const mapSpells = (spells) => spells.map(spell =>
     spell.name.toLowerCase().includes(searchInput.toLowerCase()) ?
@@ -43,12 +55,13 @@ const Spells = () => {
   const mapSpellGroups = () => spellGroups.map(group => <Group group={group} key={group.name} />)
 
   return (
-    <div>
+    <div className="content-container">
       <SearchForm
         searchInput={searchInput}
         setSearchInput={setSearchInput}
         placeholder='Search Spells by name'
       />
+      <h4>Spells:</h4>
       {mapSpellGroups()}
     </div>
   )

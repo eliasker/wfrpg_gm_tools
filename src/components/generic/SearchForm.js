@@ -2,7 +2,7 @@ import React from 'react'
 
 const SearchForm = ({ searchInput, setSearchInput, placeholder }) => {
   return (
-    <div>
+    <div className="search-container">
       <form onSubmit={e => e.preventDefault()}>
         <input type='search'
           placeholder={placeholder}

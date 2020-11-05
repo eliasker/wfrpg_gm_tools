@@ -27,9 +27,9 @@ const App = () => {
           </Navbar.Brand>
           <Navbar.Collapse>
             <Nav>
-              <Link to="/talents" className="nav-link">Talents</Link>
-              <Link to="/skills" className="nav-link">Skills</Link>
-              <Link to="/spells" className="nav-link">Spells</Link>
+              <Link to="/talents" className="nav-link navitems">Talents</Link>
+              <Link to="/skills" className="nav-link navitems">Skills</Link>
+              <Link to="/spells" className="nav-link navitems">Spells</Link>
             </Nav>
           </Navbar.Collapse>
         </Navbar>

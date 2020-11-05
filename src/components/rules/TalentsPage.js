@@ -13,7 +13,7 @@ const Talents = () => {
     t.name.toLowerCase().includes(searchInput.toLowerCase()))
 
   return (
-    <div>
+    <div className="content-container">
       <SearchForm
         searchInput={searchInput}
         setSearchInput={setSearchInput}
