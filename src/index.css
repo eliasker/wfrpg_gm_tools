@@ -22,7 +22,7 @@
   margin: 4px;
   border: solid #222222 2px;
   padding: 2px;
-  max-width: 700px;
+  max-width: 600px;
 }
 
 /*Aligns two items in container opposite each other*/
@@ -39,4 +39,37 @@
 
 .clickable:hover {
   cursor: pointer;
+}
+
+/*Background colors for different schools of magic*/
+.color-beasts {
+  background-color: rgba(255, 69, 0, 0.75);
+}
+
+.color-death {
+  background-color: rgba(128, 0, 128, 0.75);
+}
+
+.color-fire {
+  background-color: rgba(255, 0, 0, 0.75);
+}
+
+.color-heavens {
+  background-color: rgba(30, 144, 255, 0.75);
+}
+
+.color-life {
+  background-color: rgba(50, 205, 50, 0.75);
+}
+
+.color-light {
+  background-color: rgba(255, 255, 240, 0.75);
+}
+
+.color-metal {
+  background-color: rgba(255, 215, 0, 0.75);
+}
+
+.color-shadows {
+  background-color: rgba(105, 105, 105, 0.75);
 }

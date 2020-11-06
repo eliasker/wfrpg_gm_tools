@@ -4,8 +4,8 @@ import { useRecoilValue, useRecoilState } from 'recoil'
 import { talentState, skillState, prevLoadedState } from '../recoil/atoms'
 import { selectedTalents, selectedSkills } from '../recoil/selectors'
 
-import SkillList from './rules/SkillList'
-import TalentList from './rules/TalentList'
+import SkillList from './skills/SkillList'
+import TalentList from './talents/TalentList'
 
 import { saveState, getPrevState, clearState } from '../util/localStorageUtil'
 import { replaceItemAtIndex } from '../util/arrayUtils'

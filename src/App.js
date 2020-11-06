@@ -13,9 +13,9 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import { RecoilRoot } from 'recoil'
 
 import FrontPage from './components/FrontPage'
-import TalentsPage from './components/rules/TalentsPage'
-import SkillsPage from './components/rules/SkillsPage'
-import Spells from './components/rules/Spells'
+import TalentsPage from './components/talents/TalentsPage'
+import SkillsPage from './components/skills/SkillsPage'
+import SpellsPage from './components/spells/SpellsPage'
 
 const App = () => {
   return (
@@ -38,7 +38,7 @@ const App = () => {
           <Route exact path="/"><FrontPage /></Route>
           <Route path="/skills"><SkillsPage /></Route>
           <Route path="/talents"><TalentsPage /></Route>
-          <Route path="/spells"><Spells /></Route>
+          <Route path="/spells"><SpellsPage /></Route>
         </Switch>
       </Router>
     </RecoilRoot>
