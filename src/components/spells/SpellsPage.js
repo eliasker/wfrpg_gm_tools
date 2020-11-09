@@ -6,14 +6,16 @@ import Spell from './Spell'
 
 // TODO: add ids to spells.json
 // TODO: selecting spells
+// TODO: color for arcance spells
 const SpellsPage = () => {
   const spellGroups = useRecoilValue(spellGroupState)
   const [searchInput, setSearchInput] = useState('')
 
   const Group = ({ group }) => {
+    const lore = group.spells[0].lore
     return (
       group.name.toLowerCase().includes(searchInput.toLowerCase()) ?
-        <div className="item-container">
+        <div className={`item-container color-${lore} bg-darker`} >
           <h4 className="item-header-container">{group.name}</h4>
           <p>{group.desc}</p>
           <p>{group.ingredients}</p>

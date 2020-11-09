@@ -20,7 +20,7 @@ const Skill = ({ skill }) => {
     <p key={skill.id + array.indexOf(child)}>{child}</p>)
 
   return (
-    <div className="item-container">
+    <div className="item-container skill">
       <div className="item-header-container">
         <h4 onClick={() => setExpanded(!expanded)}
           className="clickable">{skill.name}</h4>

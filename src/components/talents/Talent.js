@@ -17,7 +17,7 @@ const Talent = ({ talent }) => {
   }
 
   return (
-    <div className="item-container">
+    <div className="item-container talent">
       <div className="item-header-container">
         <h4 onClick={() => setExpanded(!expanded)}
           className="clickable">{talent.name}</h4>

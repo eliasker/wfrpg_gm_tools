@@ -1,4 +1,5 @@
 /*Navigation*/
+
 .navbar {
   display: flex;
   align-items: center;
@@ -11,13 +12,16 @@
 */
 
 /*Content*/
+
 /*Container for pages in app*/
+
 .content-container {
   margin-left: 2%;
   margin-right: 2%;
 }
 
 /*Container for items in pages*/
+
 .item-container {
   margin: 4px;
   border: solid #222222 2px;
@@ -26,14 +30,15 @@
 }
 
 /*Aligns two items in container opposite each other*/
+
 .item-header-container {
   display: flex;
   justify-content: space-between;
 }
 
 /*Margin matches item-container, TODO: separate when needed */
-.search-container,
-.button-container {
+
+.search-container, .button-container {
   margin: 4px;
 }
 
@@ -41,7 +46,22 @@
   cursor: pointer;
 }
 
+.talent {
+  background-color: rgba(30, 30, 110, 0.75);
+}
+
+.skill {
+  background-color: rgba(150, 20, 20, 0.75);
+}
+
+/*Darker background*/
+
+.bg-darker {
+  filter: grayscale(10%);
+}
+
 /*Background colors for different schools of magic*/
+
 .color-beasts {
   background-color: rgba(255, 69, 0, 0.75);
 }
@@ -72,4 +92,36 @@
 
 .color-shadows {
   background-color: rgba(105, 105, 105, 0.75);
+}
+
+.color-petty {
+  background-color: rgba(162, 162, 236, 0.75)
+}
+
+.color-hedgecraft {
+  background-color: rgba(66, 95, 66, 0.75);
+}
+
+.color-daemonology {
+  background-color: rgba(125, 0, 0, 0.75);
+}
+
+.color-necromancy {
+  background-color: rgba(100, 0, 190, 0.75);
+}
+
+.color-witchcraft {
+  background-color: rgba(0, 50, 0, 0.75);
+}
+
+.color-slaanesh {
+  background-color: rgba(100, 10, 100, 0.75);
+}
+
+.color-nurgle {
+  background-color: rgba(0, 75, 0, 0.75);
+}
+
+.color-tzeentch {
+  background-color: rgba(75, 200, 200, 0.75);
 }
