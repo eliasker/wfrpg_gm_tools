@@ -4,7 +4,7 @@ const Spell = ({ spell }) => {
   const [expanded, setExpanded] = useState(false)
 
   return (
-    <div className={`color-${spell.lore} item-container`}>
+    <div className={`color-${spell.lore} spell`}>
       <div className="item-header-container">
         <h4 onClick={() => setExpanded(!expanded)}
           className="clickable">{spell.name}</h4>

@@ -12,13 +12,19 @@ const SpellsPage = () => {
   const [searchInput, setSearchInput] = useState('')
 
   const Group = ({ group }) => {
+    const [showDesc, setShowDesc] = useState(false)
     const lore = group.spells[0].lore
     return (
       group.name.toLowerCase().includes(searchInput.toLowerCase()) ?
-        <div className={`item-container color-${lore} bg-darker`} >
-          <h4 className="item-header-container">{group.name}</h4>
-          <p>{group.desc}</p>
-          <p>{group.ingredients}</p>
+        <div className={`spell-group-container color-${lore} bg-darker`} >
+          <h4 onClick={() => setShowDesc(!showDesc)}
+            className="item-header-container clickable">{group.name}
+          </h4>
+          {showDesc ?
+            <>
+              <p>{group.desc}</p>
+              <p>{group.ingredients}</p>
+            </> : null}
           {mapAllSpells(group.spells)}
         </div>
         :
@@ -55,7 +61,9 @@ const SpellsPage = () => {
         placeholder='Search Spells by name'
       />
       <h4>Spells:</h4>
-      {mapSpellGroups()}
+      <div className="spellgroup-container">
+        {mapSpellGroups()}
+      </div>
     </div>
   )
 }
