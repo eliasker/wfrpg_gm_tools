@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/wfrpg_gm_tools/precache-manifest.91dec66f07b126220a9504267987230f.js"
+  "/wfrpg_gm_tools/precache-manifest.f16d3302f36ce993c540e84414171488.js"
 );
 
 self.addEventListener('message', (event) => {

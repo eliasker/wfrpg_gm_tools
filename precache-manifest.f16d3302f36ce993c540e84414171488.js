@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1c9f7141249135ef57a95bdfd98e51fd",
+    "revision": "b144a0844d7c4a4dd726ee2325ac49d8",
     "url": "/wfrpg_gm_tools/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/wfrpg_gm_tools/static/css/2.2a86faee.chunk.css"
   },
   {
-    "revision": "8607c7601746e1e34dd2",
-    "url": "/wfrpg_gm_tools/static/css/main.e4cb10f7.chunk.css"
+    "revision": "2288b2311f49f8b8cc03",
+    "url": "/wfrpg_gm_tools/static/css/main.015d182f.chunk.css"
   },
   {
     "revision": "579db82dd6e2751452ad",
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/wfrpg_gm_tools/static/js/2.1dbb107d.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "8607c7601746e1e34dd2",
-    "url": "/wfrpg_gm_tools/static/js/main.cf33b790.chunk.js"
+    "revision": "2288b2311f49f8b8cc03",
+    "url": "/wfrpg_gm_tools/static/js/main.0c6f1969.chunk.js"
   },
   {
     "revision": "0e937602309d3965892a",
