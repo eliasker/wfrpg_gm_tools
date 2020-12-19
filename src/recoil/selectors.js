@@ -1,5 +1,5 @@
 import { selectorFamily } from 'recoil'
-import { skillState, talentState } from './atoms'
+import { skillState, talentState, spellGroupState } from './atoms'
 
 // Returns list of talents depending on selected 'mode'
 // Default is everything
@@ -26,15 +26,26 @@ export const selectedTalents = selectorFamily({
 })
 
 export const selectedSkills = selectorFamily({
-  key:'selectedSkills',
-  get: (filterType) => ({ get}) => {
+  key: 'selectedSkills',
+  get: (filterType) => ({ get }) => {
     const list = get(skillState)
 
-    switch(filterType) {
+    switch (filterType) {
       case 'Selected':
         return list.filter((item) => item.isSelected)
-      default: 
-        return list  
+      default:
+        return list
     }
+  }
+})
+
+export const selectedSpells = selectorFamily({
+  key: 'selectedSpells',
+  get: (filterType) => ({ get }) => {
+    const list = get(spellGroupState)
+    /*console.log(list.filter(group =>
+      group.spells.some(spell => spell.isSelected)))*/
+    return filterType === 'Selected' ? list.filter(group =>
+      group.spells.some(spell => spell.isSelected)) : list
   }
 })

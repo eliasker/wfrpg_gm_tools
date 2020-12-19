@@ -1,11 +1,12 @@
 import React, { useEffect } from 'react'
 
 import { useRecoilValue, useRecoilState } from 'recoil'
-import { talentState, skillState, prevLoadedState } from '../recoil/atoms'
-import { selectedTalents, selectedSkills } from '../recoil/selectors'
+import { talentState, skillState, spellGroupState, prevLoadedState } from '../recoil/atoms'
+import { selectedTalents, selectedSkills, selectedSpells } from '../recoil/selectors'
 
 import SkillList from './skills/SkillList'
 import TalentList from './talents/TalentList'
+import SpellGroupList from './spells/SpellGroupList'
 
 import { saveState, getPrevState, clearState } from '../util/localStorageUtil'
 import { replaceItemAtIndex } from '../util/arrayUtils'
@@ -16,8 +17,10 @@ const FrontPage = () => {
   const [initialized, setInitialized] = useRecoilState(prevLoadedState)
   const [talentList, setTalentList] = useRecoilState(talentState)
   const [skillList, setSkillList] = useRecoilState(skillState)
+  //const [spellList, setSpellList] = useRecoilState(spellGroupState)
   const talents = useRecoilValue(selectedTalents('Selected'))
   const skills = useRecoilValue(selectedSkills('Selected'))
+  const groups = useRecoilValue(selectedSpells('Selected'))
 
   useEffect(() => {
     if (!initialized) {
@@ -46,8 +49,8 @@ const FrontPage = () => {
   const loadSaved = () => {
     const talentIds = getPrevState('saved_talents')
     const skillIds = getPrevState('saved_skills')
-    var newTalentList = talentList
-    var newSkillList = skillList
+    let newTalentList = talentList
+    let newSkillList = skillList
     if (talentIds !== null && talentIds !== '') {
       updateArray(newTalentList, setTalentList, talentIds.split(' '))
     }
@@ -66,6 +69,7 @@ const FrontPage = () => {
       </div>
       <TalentList talents={talents} />
       <SkillList skills={skills} />
+      <SpellGroupList groups={groups} />
     </div>
   )
 }
