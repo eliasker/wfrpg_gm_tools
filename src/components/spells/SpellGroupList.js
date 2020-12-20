@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Spell from './Spell';
 
-const SpellGroupList = ({ groups, searchInput }) => {
+const SpellGroupList = ({ groups, searchInput, showOnlySelected }) => {
 
   const mapFilteredSpells = (spells) => spells.map(spell => {
     return (
@@ -15,6 +15,7 @@ const SpellGroupList = ({ groups, searchInput }) => {
   const Group = ({ group }) => {
     const [showDesc, setShowDesc] = useState(false);
     const lore = group.spells[0].lore
+
     return (
       group.name.toLowerCase().includes(searchInput.toLowerCase()) ?
         <div className={`spell-group-container color-${lore} bg-darker`}>
@@ -28,7 +29,11 @@ const SpellGroupList = ({ groups, searchInput }) => {
               <p>{group.ingredients}</p>
             </> : null
           }
-          {group.spells.map(spell => <Spell spell={spell} key={spell.name} />)}
+          {showOnlySelected ?
+            group.spells.filter(spell => spell.isSelected)
+              .map(filtered => <Spell spell={filtered} key={filtered.name} />)
+            :
+            group.spells.map(spell => <Spell spell={spell} key={spell.name} />)}
         </div>
         :
         mapFilteredSpells(group.spells)

@@ -69,7 +69,7 @@ const FrontPage = () => {
       </div>
       <TalentList talents={talents} />
       <SkillList skills={skills} />
-      <SpellGroupList groups={groups} />
+      <SpellGroupList groups={groups} searchInput={""} showOnlySelected={true}/>
     </div>
   )
 }

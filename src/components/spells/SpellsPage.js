@@ -16,7 +16,7 @@ const SpellsPage = () => {
         setSearchInput={setSearchInput}
         placeholder='Search Spells by name'
       />
-      <GroupList groups={spellGroups} searchInput={searchInput} />
+      <GroupList groups={spellGroups} searchInput={searchInput} showOnlySelected={false} />
     </div>
   )
 }
