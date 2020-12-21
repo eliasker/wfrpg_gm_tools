@@ -1,16 +1,22 @@
 //TODO: --> const saveState = (key, value) => {}
-export const saveState = (talents, skills) => {
+export const saveState = (talents, skills, groups) => {
   if (talents !== [] || talents !== undefined) {
-    var talentString = ''
+    let talentString = ''
     talents.map(t => talentString += `${t.id} `)
     localStorage.setItem('saved_talents', talentString)
   }
   if (skills !== [] || skills !== undefined) {
-    var skillString = ''
+    let skillString = ''
     skills.map(s => skillString += `${s.id} `)
     localStorage.setItem('saved_skills', skillString)
   }
-  // Window.localStorage.setItem('spellsString', spellsString)
+  if (groups !== [] || groups !== undefined) {
+    let spellString = ''
+    groups.forEach(group => {
+      group.spells.forEach(spell => { if (spell.isSelected) spellString += `${spell.id} ` })
+    });
+    localStorage.setItem('saved_spells', spellString)
+  }
 }
 
 export const getPrevState = key => {

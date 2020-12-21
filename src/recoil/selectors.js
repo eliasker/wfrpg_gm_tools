@@ -43,8 +43,6 @@ export const selectedSpells = selectorFamily({
   key: 'selectedSpells',
   get: (filterType) => ({ get }) => {
     const list = get(spellGroupState)
-    /*console.log(list.filter(group =>
-      group.spells.some(spell => spell.isSelected)))*/
     return filterType === 'Selected' ? list.filter(group =>
       group.spells.some(spell => spell.isSelected)) : list
   }

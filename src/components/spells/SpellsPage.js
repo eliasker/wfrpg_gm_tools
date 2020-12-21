@@ -4,7 +4,6 @@ import { spellGroupState } from '../../recoil/atoms'
 import SearchForm from '../generic/SearchForm'
 import GroupList from './SpellGroupList'
 
-// TODO: selecting spells
 const SpellsPage = () => {
   const spellGroups = useRecoilValue(spellGroupState)
   const [searchInput, setSearchInput] = useState('')
